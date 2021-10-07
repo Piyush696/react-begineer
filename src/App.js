@@ -12,13 +12,20 @@ import EventBind from './components/EventBind'
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import styles from './appStyle.module.css';
+import './appStyle.css'
+
 
 
 function App() {
     return ( <
         div className = "App" >
+        <h1 className={styles.success}>Success</h1>
+        <h1 className='error'>Error</h1>
         <
         Greet  name="Dutta" heroName="superman">
+    
         <p>This is children</p>
         </Greet>
         <
@@ -32,6 +39,7 @@ function App() {
         <ParentComponent></ParentComponent>
         <UserGreeting></UserGreeting>
         <NameList></NameList>
+        <Stylesheet primary={true}></Stylesheet>
         <
         /div>
     );
