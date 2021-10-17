@@ -16,6 +16,7 @@ import Stylesheet from './components/Stylesheet';
 import styles from './appStyle.module.css';
 import './appStyle.css'
 import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
 
 
 
@@ -42,6 +43,7 @@ function App() {
                 <NameList></NameList>
                 <Stylesheet primary={true}></Stylesheet>
                 <Form></Form>
+                <LifecycleA></LifecycleA>
                 <
         /div>
                 );
